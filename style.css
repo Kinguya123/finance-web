@@ -1,15 +1,13 @@
 :root{
-  --bg:#f4f7fb;
   --card:#ffffff;
   --muted:#6b7280;
   --accent:#2563eb;
   --danger:#dc2626;
   --success:#16a34a;
   --radius:12px;
-  --shadow: 0 6px 18px rgba(15,23,42,0.08);
+  --shadow: 0 6px 18px rgba(15,23,42,0.1);
   font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
 }
-
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -20,6 +18,8 @@ body{
   -moz-osx-font-smoothing:grayscale;
   line-height:1.4;
   padding:28px;
+  background: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #DD743BFF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+  background-size: 100% 100%;
 }
 
 .container{
@@ -31,8 +31,10 @@ body{
 }
 
 .site-header{
-  text-align:left;
-  margin-bottom:6px;
+  margin-bottom:15px;
+  padding: 20px;
+  color: white;
+  line-height: 12px;
 }
 .site-header h1{margin:0 0 4px;font-size:1.6rem}
 .site-header .lead{margin:0;color:var(--muted);font-size:0.95rem}
@@ -85,7 +87,20 @@ body{
 .item-meta{font-size:0.87rem;color:var(--muted)}
 .item-amount{font-weight:700}
 .controls{display:flex;gap:8px;justify-content:flex-end}
-.footer{text-align:center;color:var(--muted);padding:8px;margin-top:6px}
 @media (max-width:900px){
   .forms,.lists{grid-template-columns:1fr}
+}
+footer{
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  text-align:center;
+  margin-top:18px;
+  padding: 9px;
+  width: 100%;
+}
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(201, 76, 19, 0.678);
+  transition: 50ms;
 }
