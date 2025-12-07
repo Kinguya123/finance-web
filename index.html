@@ -1,13 +1,15 @@
 <html lang="id"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Perencanaan Keuangan - OOP JS</title>
+  <title>Perencanaan Keuangan</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
+    <center>
     <h1>Perencanaan Keuangan</h1>
-    <p class="lead">Catat pemasukan (income) dan pengeluaran (outcome) tanpa database — contoh OOP JavaScript.</p>
+    <p>Catat pemasukan (income) dan pengeluaran (outcome) tanpa database</p>
+    </center>
   </header>
 
   <main class="container">
@@ -40,6 +42,8 @@
             <select name="category" required="">
               <option value="gaji bulanan">Gaji Bulanan</option>
               <option value="freelance">Freelance</option>
+              <option value="uang akomodasi">Uang akomodasi</option>
+              <option value="Pembayaran Hutang">Pembayaran Hutang</option>
               <option value="lainnya">Pemasukan Lainnya</option>
             </select>
           </label>
@@ -112,12 +116,12 @@
         <input type="file" id="import-excel" accept=".xlsx, .xls" hidden="">
       </label>
     </section>
-
-
-    <footer class="footer">
-      <small>Dibuat dengan prinsip OOP, data disimpan sementara di memori (tidak persist ke server).</small>
-    </footer>
   </main>
+  <footer class="footer">
+    <small>Dibuat dengan prinsip OOP, data disimpan sementara di memori</small>
+    <br>
+    <small>2025 Fikry Tech © All Right Reserved</small>
+  </footer>
 
   <script src="xlsx.full.min.js"></script>
   <script type="module"src="app.js"></script>
